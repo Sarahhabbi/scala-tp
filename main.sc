@@ -1,10 +1,10 @@
 import scala.io.Source
 
-val filename = "/Users/habbi/Documents/EFREI/Scala/tp_2/test_file.csv"
+val filename = "/Users/habbi/Documents/EFREI/Scala/tp_2/scala-tp/test_file.csv"
 val scalaFileContents = {
   Source
     .fromFile(filename)
     .getLines()
 }
 
-scalaFileContents.map(line => println(line)).toList
+scalaFileContents.foreach(line => println(line))
